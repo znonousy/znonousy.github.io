@@ -1,0 +1,1917 @@
+[ 2016-12-22T00:58:55+08:00 ] 42.156.136.50 /index.php?a=index&c=Blog&id=14&m=Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_user` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_userinfo` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `blog_userinfo` WHERE ( uid = 14 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) ORDER BY id desc LIMIT 3   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Undefined index: comment /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/9a1138145e212c56091a250ba147911c.php 第 504 行.
+NOTIC: [8] Undefined index: comment /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/9a1138145e212c56091a250ba147911c.php 第 504 行.
+NOTIC: [8] Undefined index: comment /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/9a1138145e212c56091a250ba147911c.php 第 504 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-12-22T04:22:03+08:00 ] 220.181.108.113 /index.php?m=Home&c=Article&a=index&id=80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0007s ]
+SQL: SELECT a.*,(SELECT count(id) FROM blog_comment where aid = 80) as comment FROM blog_article as a WHERE ( status = 0 AND id = 80 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: UPDATE `blog_article` SET `view`=view+1 WHERE ( id = 80 ) [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_user` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_userinfo` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_userinfo` WHERE ( 1=1 AND uid='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id = 22 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) ORDER BY id desc LIMIT 5   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY rand() LIMIT 5   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 82 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 366 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 370 行.
+NOTIC: [8] Undefined variable: randtime /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2016-12-22T04:22:03+08:00 ] 220.181.108.139 /index.php?m=Home&c=Article&a=index&id=80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT a.*,(SELECT count(id) FROM blog_comment where aid = 80) as comment FROM blog_article as a WHERE ( status = 0 AND id = 80 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0007s ]
+SQL: UPDATE `blog_article` SET `view`=view+1 WHERE ( id = 80 ) [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_userinfo` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_userinfo` WHERE ( 1=1 AND uid='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id = 22 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) ORDER BY id desc LIMIT 5   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY rand() LIMIT 5   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000478s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 82 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 366 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 370 行.
+NOTIC: [8] Undefined variable: randtime /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2016-12-22T04:22:05+08:00 ] 220.181.108.83 /index.php?m=Home&c=Fenlei&a=index&id=29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id =29 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( fid = '29' AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( fid = '29' AND status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/9e04e2c3500f398dd103e4dede641a60.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2016-12-22T04:22:07+08:00 ] 220.181.108.104 /index.php?m=Home&c=Article&a=index&id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT a.*,(SELECT count(id) FROM blog_comment where aid = 24) as comment FROM blog_article as a WHERE ( status = 0 AND id = 24 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+
+[ 2016-12-22T04:22:07+08:00 ] 220.181.108.156 /index.php?m=Home&c=Fenlei&a=index&id=26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id =26 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( fid = '26' AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( fid = '26' AND status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/9e04e2c3500f398dd103e4dede641a60.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2016-12-22T04:22:09+08:00 ] 220.181.108.155 /index.php?m=Home&c=Message&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_liuyan` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_liuyan` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_liuyan` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/12060812b944063f732151632d002154.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2016-12-22T04:22:11+08:00 ] 220.181.108.177 /index.php?m=Home&c=Article&a=index&id=32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0007s ]
+SQL: SELECT a.*,(SELECT count(id) FROM blog_comment where aid = 32) as comment FROM blog_article as a WHERE ( status = 0 AND id = 32 ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+
+[ 2016-12-22T04:22:13+08:00 ] 220.181.108.143 /index.php?m=Home&c=Article&a=index&id=88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT a.*,(SELECT count(id) FROM blog_comment where aid = 88) as comment FROM blog_article as a WHERE ( status = 0 AND id = 88 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0007s ]
+SQL: UPDATE `blog_article` SET `view`=view+1 WHERE ( id = 88 ) [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_userinfo` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_userinfo` WHERE ( 1=1 AND uid='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id = 26 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) ORDER BY id desc LIMIT 5   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY rand() LIMIT 5   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 82 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 366 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 370 行.
+NOTIC: [8] Undefined variable: randtime /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2016-12-22T04:22:15+08:00 ] 220.181.108.100 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2016-12-22T07:10:01+08:00 ] 157.55.39.36 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-12-22T08:23:14+08:00 ] 42.156.251.185 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2016-12-22T08:23:34+08:00 ] 42.156.251.185 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2016-12-22T08:50:38+08:00 ] 42.156.136.50 /index.php?a=index&c=Fenlei&id=21&m=Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id =21 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( fid = '21' AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( fid = '21' AND status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/9e04e2c3500f398dd103e4dede641a60.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2016-12-22T09:08:23+08:00 ] 115.28.122.44 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000856s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-12-22T10:24:41+08:00 ] 180.163.220.60 /index.php?a=index&c=Article&id=88&m=Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0007s ]
+SQL: SELECT a.*,(SELECT count(id) FROM blog_comment where aid = 88) as comment FROM blog_article as a WHERE ( status = 0 AND id = 88 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: UPDATE `blog_article` SET `view`=view+1 WHERE ( id = 88 ) [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_userinfo` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_userinfo` WHERE ( 1=1 AND uid='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id = 26 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) ORDER BY id desc LIMIT 5   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY rand() LIMIT 5   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 82 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 366 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 370 行.
+NOTIC: [8] Undefined variable: randtime /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2016-12-22T11:42:32+08:00 ] 111.9.44.220 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-12-22T12:21:10+08:00 ] 61.135.169.40 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-12-22T12:21:15+08:00 ] 61.135.165.43 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2016-12-22T12:32:00+08:00 ] 42.156.136.50 /index.php?a=index&c=Article&id=81&m=Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT a.*,(SELECT count(id) FROM blog_comment where aid = 81) as comment FROM blog_article as a WHERE ( status = 0 AND id = 81 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: UPDATE `blog_article` SET `view`=view+1 WHERE ( id = 81 ) [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_userinfo` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_userinfo` WHERE ( 1=1 AND uid='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id = 23 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) ORDER BY id desc LIMIT 5   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY rand() LIMIT 5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 82 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 366 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 370 行.
+NOTIC: [8] Undefined variable: randtime /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2016-12-22T12:39:07+08:00 ] 218.241.98.203 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2016-12-22T12:54:58+08:00 ] 42.156.138.50 /index.php?a=index&c=Article&id=88&m=Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0010s ]
+SQL: SELECT a.*,(SELECT count(id) FROM blog_comment where aid = 88) as comment FROM blog_article as a WHERE ( status = 0 AND id = 88 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: UPDATE `blog_article` SET `view`=view+1 WHERE ( id = 88 ) [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_userinfo` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `blog_userinfo` WHERE ( 1=1 AND uid='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id = 26 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) ORDER BY id desc LIMIT 5   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY rand() LIMIT 5   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 82 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 366 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 370 行.
+NOTIC: [8] Undefined variable: randtime /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2016-12-22T13:27:34+08:00 ] 203.208.60.214 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2016-12-22T13:40:20+08:00 ] 106.120.173.84 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2016-12-22T13:40:32+08:00 ] 106.120.173.84 /index.php?m=Home&c=Article&a=index&id=86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT a.*,(SELECT count(id) FROM blog_comment where aid = 86) as comment FROM blog_article as a WHERE ( status = 0 AND id = 86 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: UPDATE `blog_article` SET `view`=view+1 WHERE ( id = 86 ) [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_userinfo` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_userinfo` WHERE ( 1=1 AND uid='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id = 24 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) ORDER BY id desc LIMIT 5   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY rand() LIMIT 5   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 82 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 366 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 370 行.
+NOTIC: [8] Undefined variable: randtime /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-12-22T17:26:34+08:00 ] 68.180.229.234 /index.php?m=Home&c=Fenlei&a=index&id=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id =22 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( fid = '22' AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( fid = '22' AND status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/9e04e2c3500f398dd103e4dede641a60.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2016-12-22T18:08:38+08:00 ] 110.184.10.131 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2016-12-22T18:09:09+08:00 ] 118.114.165.144 /index.php?m=Home&c=Article&a=index&id=86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT a.*,(SELECT count(id) FROM blog_comment where aid = 86) as comment FROM blog_article as a WHERE ( status = 0 AND id = 86 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0007s ]
+SQL: UPDATE `blog_article` SET `view`=view+1 WHERE ( id = 86 ) [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_userinfo` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_userinfo` WHERE ( 1=1 AND uid='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id = 24 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( uid = 14 AND status = 0 ) ORDER BY id desc LIMIT 5   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY rand() LIMIT 5   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 82 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 366 行.
+NOTIC: [8] Undefined index: mid /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 370 行.
+NOTIC: [8] Undefined variable: randtime /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/f46599ac0be64691ef469dc09e956ae3.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2016-12-22T18:09:10+08:00 ] 118.114.165.144 /index.php/Home/Article/getReplay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_comment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_comment` WHERE ( aid = 86 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-12-22T18:09:10+08:00 ] 110.184.10.131 /index.php?m=Home&c=Base&a=EchoMyVerify&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-12-22T18:11:09+08:00 ] 216.145.5.42 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2016-12-22T18:34:15+08:00 ] 157.55.39.36 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2016-12-22T18:37:30+08:00 ] 140.205.205.3 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2016-12-22T18:43:01+08:00 ] 42.156.136.50 /index.php?a=index&c=Userlist&m=Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_userinfo` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_userinfo` WHERE ( 1=1 AND uid='14' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/ffb6584a64b37516070dc185ed381f65.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2016-12-22T18:56:10+08:00 ] 140.205.144.191 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2016-12-22T19:53:07+08:00 ] 123.125.71.113 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2016-12-22T21:09:08+08:00 ] 61.182.137.6 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-12-22T21:09:08+08:00 ] 124.95.168.140 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-12-22T21:09:13+08:00 ] 122.246.5.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2016-12-22T21:31:25+08:00 ] 140.205.205.3 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='26' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='25' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='23' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='22' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 82 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2016-12-22T22:15:26+08:00 ] 106.120.173.84 /index.php?m=Home&c=Fenlei&a=index&id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( id =24 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( fid = '24' AND status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( fid = '24' AND status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='24' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/9e04e2c3500f398dd103e4dede641a60.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2016-12-22T23:08:19+08:00 ] 182.118.21.227 /index.php?a=index&c=Article&id=33&m=Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT a.*,(SELECT count(id) FROM blog_comment where aid = 33) as comment FROM blog_article as a WHERE ( status = 0 AND id = 33 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+

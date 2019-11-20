@@ -1,0 +1,67 @@
+[ 2017-04-05T15:03:17+08:00 ] ::1 /Mine/Learn/Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005901s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'blogby'
+
+[ 2017-04-05T15:04:45+08:00 ] ::1 /Mine/Learn/Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='29' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='29' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='29' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='29' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='29' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='29' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='28' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: muser E:\WWW\Mine\Learn\Blog\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 83 行.
+NOTIC: [8] Undefined variable: is_active E:\WWW\Mine\Learn\Blog\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 363 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012506s ]
+

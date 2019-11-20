@@ -1,0 +1,21 @@
+[ 2017-01-01T19:46:07+08:00 ] 82.193.102.149 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `blog_jingli` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: username /data/home/qxu1141980280/htdocs/Application/Admin/Controller/CommonController.class.php 第 10 行.
+SQL: SELECT * FROM `blog_jingli` WHERE ( username = '%s' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: username /data/home/qxu1141980280/htdocs/Application/Admin/Controller/CommonController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+

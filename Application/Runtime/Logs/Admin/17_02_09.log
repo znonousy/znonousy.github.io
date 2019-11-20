@@ -1,0 +1,42 @@
+[ 2017-02-09T06:01:39+08:00 ] 58.20.108.148 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `blog_jingli` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: username /data/home/qxu1141980280/htdocs/Application/Admin/Controller/CommonController.class.php 第 10 行.
+SQL: SELECT * FROM `blog_jingli` WHERE ( username = '%s' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: username /data/home/qxu1141980280/htdocs/Application/Admin/Controller/CommonController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+
+[ 2017-02-09T06:01:40+08:00 ] 58.20.108.148 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `blog_jingli` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: username /data/home/qxu1141980280/htdocs/Application/Admin/Controller/CommonController.class.php 第 10 行.
+SQL: SELECT * FROM `blog_jingli` WHERE ( username = '%s' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: username /data/home/qxu1141980280/htdocs/Application/Admin/Controller/CommonController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+

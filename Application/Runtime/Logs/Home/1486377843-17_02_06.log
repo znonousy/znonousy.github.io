@@ -1,0 +1,58 @@
+[ 2017-02-06T18:44:03+08:00 ] 122.246.5.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid = 0 ) ORDER BY sort desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( fid != 0 ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_site` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_email_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_email_set` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_friendlink` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_friendlink` ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` WHERE ( status = 0 ) ORDER BY istop desc,id desc LIMIT 0,10   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_fenlei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='28' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='29' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='29' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='29' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_user` WHERE ( 1=1 AND id='14' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_fenlei` WHERE ( 1=1 AND id='29' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_slides` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_slides` ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Undefined index: muser /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 83 行.
+NOTIC: [8] Undefined variable: is_active /data/home/qxu1141980280/htdocs/Application/Runtime/Cache/Home/4ff1c5b8284f90a50fd957ef30c3e1de.php 第 363 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
